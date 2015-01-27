@@ -34,7 +34,7 @@ return array(
 	| Will be displayed in the header
 	*/
 
-	'site_name' => 'Nice PHP Framework',
+	'site_name' => 'Nice Docs',
 
 	/*
 	|--------------------------------------------------------------------------
