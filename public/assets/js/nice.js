@@ -17,8 +17,10 @@ $(document).ready(function() {
 
 	var tmpa = document.createElement('a');
 	$(tmpa).attr('href', window.location.href);
-	console.log(tmpa.pathname);
 	$('.menu a[href="' + tmpa.href + '"]').parent('li').addClass('active');
+	if ($('.menu li.active').length <= 0) {
+		$('.menu li').first().addClass('active');
+	}
 
 	// Bootstrap the tables
 	$(".documentation table").addClass("table table-striped table-bordered table-hover table-condensed");
