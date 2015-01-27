@@ -9,6 +9,10 @@ $(document).ready(function() {
 		$(this).parents("li").removeClass("withripple");
 	});
 
+	$('.menu li.withripple').on('click', function(e) {
+		window.location.href = $(e.target).find('a').attr('href');
+	});
+
 	$('#github a').tooltip();
 
 	var tmpa = document.createElement('a');
