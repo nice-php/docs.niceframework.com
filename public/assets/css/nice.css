@@ -1,0 +1,161 @@
+.header-panel {
+    background-color: #009587;
+    height: 96px;
+    position: relative;
+    z-index: 3;
+}
+.header-panel div {
+    position: relative;
+    height: 100%;
+}
+.header-panel h1 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 35px;
+}
+.pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 0;
+    overflow: auto;
+}
+.pages > div {
+    padding: 0 5px;
+    padding-top: 32px;
+}
+.pages .header {
+    color: rgb(82, 101, 162);
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    letter-spacing: 1.20000004768372px;
+}
+.page {
+    transform: translateY(1080px);
+    transition: transform 0 linear;
+    display: none;
+    opacity: 0;
+    font-size: 16px;
+}
+.page.active {
+    transform: translateY(0px);
+    transition: all 0.3s ease-out;
+    display: block;
+    opacity: 1;
+}
+.menu {
+    overflow: auto;
+    padding: 0;
+}
+.menu, .menu * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.menu ul {
+    padding: 0;
+    margin: 7px 0;
+}
+.menu ul li {
+    list-style: none;
+    padding: 15px 0 15px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    text-transform: none;
+}
+.menu ul li.active {
+    background-color: #dedede;
+    position: relative;
+}
+.menu ul li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.menu ul li.to-upper {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333333;
+}
+.menu ul li > ul li {
+    padding: 10px 0 10px 35px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 5px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-default {
+    border-left-color: #777 !important;
+}
+
+.bs-callout-default h4 {
+    color: #777;
+}
+
+.bs-callout-primary {
+    border-left-color: #428bca !important;
+}
+
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c !important;
+}
+
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f !important;
+}
+
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e !important;
+}
+
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de !important;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}

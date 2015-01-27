@@ -1,10 +1,16 @@
 $(document).ready(function() {
+	$(".menu li").addClass("withripple");
+
+	$(".menu li > ul").each(function() {
+		$(this).closest('li').addClass('to-upper');
+	});
+
+	$(".menu li li").each(function() {
+		$(this).parents("li").removeClass("withripple");
+	});
 
 	// Bootstrap the tables
 	$(".documentation table").addClass("table table-striped table-bordered table-hover table-condensed");
-
-	// Bootstrap the images
-	$(".documentation img").addClass("img-responsive img-thumbnail");
 
 	// Prettify the <pre> tags
 	$(".documentation [class^='language-']").closest("pre").addClass("prettyprint theme-freshcut");
