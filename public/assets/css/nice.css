@@ -60,7 +60,7 @@
 }
 .menu ul {
     padding: 0;
-    margin: 7px 0;
+    margin: 20px 0;
 }
 .menu ul li {
     list-style: none;
@@ -86,7 +86,13 @@
 .menu ul li > ul li {
     padding: 10px 0 10px 35px;
 }
-
+#github {
+    margin: 35px auto;
+    text-align: center;
+}
+#github i {
+    top: 0;
+}
 h1 a {
     color: inherit;
 }

@@ -9,6 +9,13 @@ $(document).ready(function() {
 		$(this).parents("li").removeClass("withripple");
 	});
 
+	$('#github a').tooltip();
+
+	var tmpa = document.createElement('a');
+	$(tmpa).attr('href', window.location.href);
+	console.log(tmpa.pathname);
+	$('.menu a[href="' + tmpa.href + '"]').parent('li').addClass('active');
+
 	// Bootstrap the tables
 	$(".documentation table").addClass("table table-striped table-bordered table-hover table-condensed");
 
