@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$(".documentation table").addClass("table table-striped table-bordered table-hover table-condensed");
 
 	// Prettify the <pre> tags
-	$(".documentation [class^='language-']").closest("pre").addClass("prettyprint theme-freshcut");
+	$(".documentation [class^='language-']").closest("pre").addClass("prettyprint");
 
 	// Dynamic callouts
 	$(".documentation blockquote:contains(Attention)").addClass("bs-callout bs-callout-danger");
